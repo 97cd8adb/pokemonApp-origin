@@ -7,6 +7,33 @@
 
 h1 {
   display: flex;
-  text-align: center;
   justify-content: center;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;  /* 横方向中央寄せ */
+  gap: 20px;                /* ボタン間のスペース */
+  margin-top: 20px;         /* 上に余白 */
+}
+
+.btn-prev, .btn-next {
+  background-color: #4CAF50; /* 緑色 */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-prev:hover, .btn-next:hover {
+  background-color: #45a049; /* 少し濃い緑 */
+}
+
+.btn-prev:disabled, .btn-next:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
 }
