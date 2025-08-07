@@ -10,7 +10,7 @@ const App = () => {
     const fetchData = async () => {
       try{
         const response = await fetch(
-          `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=20`
+          `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=21`
         );
         const data = await response.json();
         const detailedPromises = data.results.map(
